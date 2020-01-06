@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>Construction Calculator</title>
+    <link rel="shortcut icon" href="images/constructLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <a href="index.html" class="main-header__brand">
+                <img src="images/constructLogo.jpg" alt="uHost - Your favorite hosting company">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item--cta">
+                    <a href="index.html">Calculate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item mobile-nav__item--cta">
+                    <a href="index.html">Calculate</a>
+                </li>
+            </ul>
+    </nav>
+    <main>
+        <section id="product-overview">
+            <h1>Get Your Estimate Today!</h1>
+        </section>
+        <section id="plans">
+            <h1 class="section-title">Calculate Price</h1>
+            <!-- input fields start here -->
+            <div class="section-title">
+                <h2>Width:</h2><input type="text" name="Width" id="width">ft.
+                <h2>Length:</h2><input type="text" name="Length" id="length">ft.
+                <h2>Depth:</h2><input type="text" name="Depth" id="depth">ft.
+                <br>
+                <h1>Material Density:</h1>
+                <select class="myDropdown" name="myDropdown">
+                    <option value="Asphault" id="Asphault">Asphault: 140 lb/ft³</option>
+                    <option value="Dirt" id="Dirt">Dirt: 100 lb/ft³</option>
+                    <option value="Sand" id="Sand">Sand: 125 lb/ft³</option>
+                </select>
+                <br><br>
+                <div class="calculate-btn">
+                    <button class="button" id="calculateBtn">Calculate</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">Support</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul> 
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
