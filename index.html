@@ -45,23 +45,37 @@
             <h1 class="section-title">Calculate Price</h1>
             <!-- input fields start here -->
             <div class="section-title">
-                <h2>Width:</h2><input type="text" name="Width" id="width">ft.
-                <h2>Length:</h2><input type="text" name="Length" id="length">ft.
-                <h2>Depth:</h2><input type="text" name="Depth" id="depth">ft.
+                <h2>Width:</h2><input type="number" name="Width" id="width">ft.
+                <h2>Length:</h2><input type="number" name="Length" id="length">ft.
+                <h2>Depth:</h2><input type="number" name="Depth" id="depth">ft.
                 <br>
                 <h1>Material Density:</h1>
-                <select class="myDropdown" name="myDropdown">
-                    <option value="Asphault" id="Asphault">Asphault: 140 lb/ft³</option>
-                    <option value="Dirt" id="Dirt">Dirt: 100 lb/ft³</option>
-                    <option value="Sand" id="Sand">Sand: 125 lb/ft³</option>
+                <select class="myDropdown" id="myDropdown" name="myDropdown">
+                    <option value="140" id="option">Asphault: 140 lb/ft³</option>
+                    <option value="89" id="option">Sand: 89 lb/ft³</option>
+                    <option value="89" id="option">Loamy Sand: 89 lb/ft³</option>
+                    <option value="91" id="option">Sandy Loam: 91 lb/ft³</option>
+                    <option value="89" id="option">Loam: 89 lb/ft³</option>
+                    <option value="86" id="option">Silty Loam: 86 lb/ft³</option>
+                    <option value="86" id="option">Silt: 86 lb/ft³</option>
+                    <option value="94" id="option">Sandy Clayey Loam: 94 lb/ft³</option>
+                    <option value="87" id="option">Clayey Loam: 87 lb/ft³</option>
+                    <option value="81" id="option">Silty Clayey Loam: 81 lb/ft³</option>
+                    <option value="79" id="option">Silty Clay: 79 lb/ft³</option>
+                    <option value="92" id="option">Sandy Clay: 92 lb/ft³</option>
+                    <option value="83" id="option">Clay: 83 lb/ft³</option>
                 </select>
                 <br><br>
                 <div class="calculate-btn">
                     <button class="button" id="calculateBtn">Calculate</button>
                 </div>
+
+                <div id="parent">
+                    <h1 id="results"></h1>
+                </div>
             </div>
         </section>
-
+        
     </main>
     <footer class="main-footer">
         <nav>
