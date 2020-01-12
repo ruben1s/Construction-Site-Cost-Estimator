@@ -13,7 +13,6 @@ if (option) {
 
 function getVal() {
     option = materialDropdown.options[materialDropdown.selectedIndex].value;
-    console.log(option);
 }
 
 function calculateInput() {
@@ -21,20 +20,21 @@ function calculateInput() {
     let len = parseFloat(length.value);
     let dep = parseFloat(depth.value);
     let opt = option;
+
     if (wid >= 0 && len >= 0 && dep >= 0) {
     let volume = wid * len * dep;
     let total = (volume * opt) / ton;
     total = parseFloat(total).toFixed(2);
     
-    let newText = document.createTextNode(`The total weight is ${total} tons for the project.`),
+    let newText = `The total weight is ${total} tons for the project.`;
     h1 = document.getElementById("results");
-    
-    h1.appendChild(newText);
-
+    h1.innerHTML = newText;
     } else {
         alert('Please enter values greater than 0.');
     }
 }
+
+
 
 const calculateEventHandler = calculateBtn.addEventListener('click', calculateInput);
 
